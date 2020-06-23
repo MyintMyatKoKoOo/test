@@ -1,11 +1,3 @@
-Skip to content
- MyintMyatKoKoOo / php_blog
-Code Issues 0 Pull requests 0 Projects 0 Actions Wiki Security 0 Pulse Community
-php_blog/index.php
-@MyintMyatKoKoOo MyintMyatKoKoOo Add files via upload
-67666d5 24 days ago
-113 lines (98 sloc)  3.36 KB
- 
 <?php
 session_start();
 include_once "html_header.php";
@@ -119,15 +111,3 @@ D;
 include_once "page_footer.php";
 include_once "html_footer.php";
 ?>
-© 2020 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
