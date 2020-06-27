@@ -71,15 +71,34 @@
       #ad{
           display: none;
       }
+      .btns{
+        padding:3px 6px;
+        background-color: transparent;
+        box-shadow: 2px 3px 2px rgb(142, 153, 218);
+        color: rgb(8, 1, 1);
+        right: 20px;
+        top:10px;
+        position:absolute;
+        transition: all 0.3s ease-in-out 0s;
+        border: 1px solid transparent;
+      }
+      .btns:hover{
+          background-color: rgba(92, 185, 181, 0.9);
+          color: rgba(20, 22, 21, 0.9);
+          transform: scale(1.1);
+      }
 
 
     </style>
 </head>
 <body>
 
-    <audio controls autoplay loop id="ad">
+    <audio controls loop id="ad">
         <source src="sounds/bgsound.mp3" type="audio/mp3">
       </audio> 
+
+    <button class="btns">Play</button>  
+    
 
     <div class="gridfor">
         <div class="item">
@@ -161,6 +180,19 @@
         </div>
     </div>
     
+<script>
+    document.querySelector(".btns").addEventListener("click",e=>{
+            
+            if(e.target.innerHTML === "Stop"){
+                document.querySelector("#ad").pause();
+                e.target.innerHTML="Play";
+            }else{
+                document.querySelector("#ad").play();
+                e.target.innerHTML="Stop";
 
+            }
+    });
+
+</script>
 </body>
 </html>
